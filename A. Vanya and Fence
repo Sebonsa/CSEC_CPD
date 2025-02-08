@@ -1,0 +1,11 @@
+nostd_fheight = input()
+stds_height = input()
+n_f = nostd_fheight.split()
+s_h= stds_height.split()
+road_width = 0
+for i in range(len(s_h)):
+    if int(s_h[i]) <= int(n_f[1]):
+        road_width+=1
+    else:
+        road_width+=2
+print(road_width)
