@@ -1,0 +1,6 @@
+name = input().lower()
+name_char = set(name)
+if len(name_char)%2 != 0:
+    print("IGNORE HIM!")
+else:
+    print('CHAT WITH HER!')
