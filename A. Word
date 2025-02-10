@@ -1,0 +1,12 @@
+word = input()
+up_char = 0
+low_char = 0
+for char in word:
+    if char.isupper():
+        up_char += 1
+    else:
+        low_char += 1
+if up_char > low_char:
+    print(word.upper())
+else:
+    print(word.lower())
