@@ -1,0 +1,6 @@
+n = int(input())
+cubes = input().split()
+cubes = [int(x) for x in cubes]
+cubes.sort()
+for i in cubes:
+    print(i,end=" ")
