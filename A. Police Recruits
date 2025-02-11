@@ -1,0 +1,12 @@
+n = int(input())
+cr_pol = list(map(int, input().split()))
+police = 0
+unt_cr = 0
+for i in range(len(cr_pol)):
+    if cr_pol[i] > 0:
+        police += cr_pol[i]
+    elif police > 0:
+        police = police + cr_pol[i]
+    else:
+        unt_cr += 1
+print(unt_cr)
