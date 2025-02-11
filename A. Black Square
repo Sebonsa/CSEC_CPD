@@ -1,0 +1,13 @@
+n = list(map(int, input().split()))
+s = input()
+energy = 0
+for char in s:
+    if char == '1':
+        energy += n[0]
+    elif char == '2':
+        energy += n[1]
+    elif char == '3':
+        energy += n[2]
+    else:
+        energy += n[3]
+print(energy)
