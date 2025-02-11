@@ -1,0 +1,10 @@
+name = input()
+alph = 'abcdefghijklmnopqrstuvwxyz'
+in_char = 'a'
+rot = 0
+for char in name:
+    clockwise_dist = abs(alph.index(char) - alph.index(in_char))
+    counterclockwise_dist = 26 - clockwise_dist
+    rot += min(clockwise_dist, counterclockwise_dist)   
+    in_char = char
+print(rot)
