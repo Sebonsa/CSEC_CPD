@@ -1,0 +1,10 @@
+n = int(input())
+no_group = 1
+inp_list = []
+for i in range(n):
+	ith_group = input()
+	inp_list.append(ith_group)
+for i in range(len(inp_list)-1):
+	if inp_list[i] != inp_list[i+1]:
+		no_group += 1
+print(no_group)
