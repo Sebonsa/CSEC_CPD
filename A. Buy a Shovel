@@ -1,0 +1,8 @@
+k_r = list(map(int, input().split()))
+k, r = k_r
+burl = 1
+while True:
+    if(burl*k) % 10 == 0 or (burl * k - r) % 10 == 0:
+        print(burl)
+        break
+    burl += 1
