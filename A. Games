@@ -1,0 +1,11 @@
+n = int(input())
+games = n*(n-1)
+team_color = []
+guest_cloth = 0
+for i in range(n):
+    team_color.append(input().split())
+for i in range(n):
+    for x in range(n):
+        if team_color[i][0] == team_color[x][1]:
+            guest_cloth += 1
+print(guest_cloth)
