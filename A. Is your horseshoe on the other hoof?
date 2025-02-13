@@ -1,0 +1,9 @@
+st = input().split()
+sh_buy = 0
+modlist = []
+for color in st:
+    col_count = st.count(color)
+    if color not in modlist and col_count > 1:
+        sh_buy += (col_count - 1)
+    modlist.append(color)
+print(sh_buy)
