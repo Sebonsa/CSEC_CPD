@@ -1,0 +1,7 @@
+s = input()
+sq_pos = 1
+t = input()
+for i in range(len(t)):
+    if t[i] == s[sq_pos - 1]:
+        sq_pos += 1
+print(sq_pos)
