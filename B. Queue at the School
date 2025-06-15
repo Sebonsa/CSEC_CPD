@@ -1,0 +1,14 @@
+n, t = list(map(int, input().split()))
+ls = list(input().upper())
+for i in range(t):
+    i = 0
+    while i < len(ls)-1:
+        if ls[i] =="B" and ls[i+1] == "G":
+        
+            ls[i] = "G"
+            ls[i+1] = "B"
+            i += 1
+        i+=1   
+
+s = "".join(ls)
+print(s)
