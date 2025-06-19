@@ -1,0 +1,7 @@
+n = int(input())
+ljp = list(map(int, input().split()))
+cja=0.0
+for i in ljp:
+	cja += i/100
+cjp = cja/n*100
+print(cjp)
